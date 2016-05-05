@@ -8,11 +8,12 @@ class ShooterSubsystem: public Subsystem
 {
 private:
 
-	CANTalon Speedwheel,Flywheel;
+
 
 	// It's desirable that everything possible under private except
 	// for methods that implement subsystem capabilities
 public:
+	CANTalon Speedwheel,Flywheel;
 	ShooterSubsystem();
 	void InitDefaultCommand();
 	void Shoot(float speed);

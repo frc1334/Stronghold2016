@@ -35,9 +35,6 @@ public:
 	bool GetOPB(){ return ButtonBOP->Get();}
 	bool GetOPX(){ return ButtonXOP->Get();}
 	bool GetOPY(){ return ButtonYOP->Get();}
-	void CamInit() { cam->OpenCamera(); cam->SetFPS(24); cam->SetSize(640,480); cam->StartCapture(); cam->UpdateSettings();}
-
-	void CamClose() { cam->StopCapture(); cam->CloseCamera(); cam->UpdateSettings();}
 	inline float AddDeadZone(float original, float deadzone)
 	{
 		//Joystick_Drive.get
